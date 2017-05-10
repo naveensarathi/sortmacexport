@@ -1,5 +1,8 @@
 #!/usr/local/bin/python3
+#Name:convert.py
 #Version 1.x
+#usage "convert EXPORT_FOLDERNAME"
+#EXPORT_FOLDERNAME is the folder name where Mac Photos will export the photos to.
 import os
 import time
 import re
@@ -13,7 +16,6 @@ removed_folder=0
 
 
 source_folder = sys.argv[1]
-#source_folder = "/Users/Naveen/TEST/"
 # Open Log File
 log_filename=os.getcwd()+"/convert_fl.log"
 log=open(log_filename,'w')
