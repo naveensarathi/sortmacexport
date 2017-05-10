@@ -13,7 +13,9 @@ import shutil
 
 #Counters
 removed_folder=0
-
+if (len(sys.argv) <= 1 ):
+ print ("USAGE : ./convert EXPORTFOLDERNAME")
+ exit()
 
 source_folder = sys.argv[1]
 # Open Log File
